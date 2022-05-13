@@ -3,7 +3,16 @@
 #include <algorithm>
 
 template <typename T>
-void selection_sort(std::vector<T>& keys)
+void PrintKeys(const std::vector<T>& keys)
+{
+    std::cout << "{ ";
+    for (const T& i : keys)
+        std::cout << i << ' ';
+    std::cout << "}" << std::endl;
+}
+
+template <typename T>
+void SelectionSort(std::vector<T>& keys)
 {
     for (std::size_t i = 0; i < keys.size(); ++i) {
         std::size_t min_index = i;
@@ -20,12 +29,13 @@ void selection_sort(std::vector<T>& keys)
 int main(void)
 {
     std::vector<int> keys = {3, 2, 1, 0};
-    selection_sort(keys);
+    std::cout << "Unsorted Keys = ";
+    PrintKeys(keys);
 
-    std::cout << "Sorted Keys = { ";
-    for (const int& i : keys)
-        std::cout << i << ' ';
-    std::cout << "}";
+    SelectionSort(keys);
+
+    std::cout << "Sorted Keys = ";
+    PrintKeys(keys);
 
     return 0;
 }
