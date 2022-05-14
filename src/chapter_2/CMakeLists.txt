@@ -19,7 +19,6 @@ target_compile_features(${PROJECT_NAME}
         cxx_std_17
 )
 
-
 install(TARGETS ${PROJECT_NAME}
     RUNTIME DESTINATION "${GA_BIN_DIR}/chapter_2"
 )
