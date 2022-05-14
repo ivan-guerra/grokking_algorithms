@@ -1,10 +1,10 @@
 cmake_minimum_required(VERSION 3.13...3.22)
 
-project(factorial DESCRIPTION "A recursive factorial calculator"
-                  LANGUAGES   CXX
+project(c3 DESCRIPTION "A recursive factorial calculator"
+           LANGUAGES   CXX
 )
 
-add_executable(${PROJECT_NAME} Factorial.cc)
+add_executable(${PROJECT_NAME} ChapterThree.cc)
 
 target_compile_options(${PROJECT_NAME}
     PRIVATE

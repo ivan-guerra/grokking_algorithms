@@ -1,10 +1,10 @@
 cmake_minimum_required(VERSION 3.13...3.22)
 
-project(ssort DESCRIPTION "Selection sort"
-              LANGUAGES   CXX
+project(c2 DESCRIPTION "Selection sort"
+           LANGUAGES   CXX
 )
 
-add_executable(${PROJECT_NAME} SelectionSort.cc)
+add_executable(${PROJECT_NAME} ChapterTwo.cc)
 
 target_compile_options(${PROJECT_NAME}
     PRIVATE

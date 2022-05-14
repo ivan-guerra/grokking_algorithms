@@ -1,10 +1,10 @@
 cmake_minimum_required(VERSION 3.13...3.22)
 
-project(bsearch DESCRIPTION "Binary search"
-                LANGUAGES   CXX
+project(c1 DESCRIPTION "Binary search"
+           LANGUAGES   CXX
 )
 
-add_executable(${PROJECT_NAME} BinarySearch.cc)
+add_executable(${PROJECT_NAME} ChapterOne.cc)
 
 target_compile_options(${PROJECT_NAME}
     PRIVATE
